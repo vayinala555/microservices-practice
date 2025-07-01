@@ -14,10 +14,11 @@ public class Order {
     @Id
     @GeneratedValue
     long orderId;
-
+    @Column(name = "user_id")
     private String userId;
     private LocalDateTime orderDate;
     private double totalAmount;
+    private String paymentStatus;
 
     @OneToMany(mappedBy = "order",  cascade = CascadeType.ALL)
     @JsonManagedReference

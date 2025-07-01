@@ -9,6 +9,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+      format_sql: true
     show-sql: true
   h2:
     console:
@@ -24,3 +25,7 @@ eureka:
 cart:
   service:
     url: http://SHOPPING-CART/cart
+
+payment:
+  service:
+    url: http://PAYMENT/payment

@@ -9,6 +9,7 @@ import practice.microservices.orders.service.OrderService;
 import java.util.List;
 
 @RestController
+@RequestMapping("/orders")
 public class OrderController {
 
     @Autowired

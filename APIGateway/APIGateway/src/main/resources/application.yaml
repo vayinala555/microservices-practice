@@ -19,9 +19,14 @@ spring:
             - Path=/cart/**
 
         - id: order-service
-          uri: lb://ORDERS
+          uri: lb://orders
           predicates:
             - Path=/orders/**
+
+        - id: payment-service
+          uri: lb://PAYMENT
+          predicates:
+            - Path=/payment/**
           
 server:
   port: 8080
@@ -33,3 +38,5 @@ eureka:
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
+  filter:
+    enabled : false

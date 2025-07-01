@@ -6,6 +6,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import practice.microservices.orders.dto.CartItemDto;
+import practice.microservices.orders.dto.Payment;
+import practice.microservices.orders.dto.PaymentRequest;
 import practice.microservices.orders.entities.Order;
 import practice.microservices.orders.entities.OrderItem;
 import practice.microservices.orders.repositories.OrderItemRepository;
@@ -26,6 +28,11 @@ public class OrderServiceImpl implements OrderService {
 
     @Value("${cart.service.url}")
     String cartServiceUrl;
+
+    @Value("${payment.service.url}")
+    String paymentServiceUrl;
+
+
     @Autowired
     private RestTemplate restTemplate;
 
@@ -68,6 +75,20 @@ public class OrderServiceImpl implements OrderService {
         String checkoutUrl = cartServiceUrl + "/" + userId + "/checkout";
         restTemplate.postForObject(checkoutUrl, null, String.class);
 
+        PaymentRequest paymentRequest = new PaymentRequest();
+        paymentRequest.setOrderId(String.valueOf(orderResult.getOrderId()));
+        paymentRequest.setAmount(total);
+        paymentRequest.setUserId(userId);
+
+        String paymentUrl = paymentServiceUrl + "/pay";
+        Payment paymentResult = restTemplate.postForObject(paymentUrl, paymentRequest, Payment.class);
+
+        if (!"SUCCESS".equals(paymentResult.getStatus())) {
+            orderResult.setPaymentStatus("FAILED");
+        } else {
+            orderResult.setPaymentStatus("SUCCESS");
+        }
+        orderRepo.save(orderResult);
         return orderResult;
 
     }
