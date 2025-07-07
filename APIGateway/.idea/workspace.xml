@@ -1,33 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6937a951-3018-468d-9ea8-46c2deeceb2a" name="Changes" comment="" />
+    <list default="true" id="47a96c0b-329d-4401-9d73-ec3808eeeae2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/OrdersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/OrdersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/config/RestTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/dto/CartItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/dto/CartItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/dto/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/dto/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/dto/PaymentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/dto/PaymentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/entities/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/entities/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/repositories/OrderItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/repositories/OrderItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/repositories/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/practice/microservices/orders/serviceImpl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/practice/microservices/orders/serviceImpl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/test/java/practice/microservices/orders/OrdersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/test/java/practice/microservices/orders/OrdersApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/controller/PaymentContrloller.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/controller/PaymentContrloller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/dto/PaymentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/dto/PaymentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/entities/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/entities/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/repositories/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/repositories/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/serviceImpl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/serviceImpl/PaymentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/practice/microservices/payment/services/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/practice/microservices/payment/services/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/test/java/practice/microservices/payment/PaymentApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/test/java/practice/microservices/payment/PaymentApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vayinala555"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vayinala555/microservices-practice.git",
+    "accountId": "2d564d3e-ffbd-4f0c-a7c1-74a952a063fc"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2z0fYdYlINyqhmxeS3ECi04c7YU" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2zYbMl3BotWpjozMw5WmvNV9Nx0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.CatalogServiceApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.OrdersApplication.executor": "Run",
+    "Spring Boot.PaymentApplication.executor": "Run",
+    "Spring Boot.ShoppingCartApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OrdersApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="APIGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="practice.microservices.APIGateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="catalog-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="practice.microservices.catalog_service.CatalogServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EurekaServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="practice.microservices.EurekaServer.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrdersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="orders-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="practice.microservices.orders.OrdersApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.microservices.orders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="payment-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="practice.microservices.payment.PaymentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="practice.microservices.shopping_cart.ShoppingCartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OrdersApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -38,17 +177,27 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6937a951-3018-468d-9ea8-46c2deeceb2a" name="Changes" comment="" />
-      <created>1750872960407</created>
+      <changelist id="47a96c0b-329d-4401-9d73-ec3808eeeae2" name="Changes" comment="" />
+      <created>1751910910698</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1750872960407</updated>
-      <workItem from="1750872961414" duration="102000" />
-      <workItem from="1750873091071" duration="38000" />
+      <updated>1751910910698</updated>
+      <workItem from="1751910928408" duration="3119000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EurekaServer/src/main/java/practice/microservices/EurekaServer/EurekaServerApplication.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
