@@ -16,8 +16,8 @@ public class OrderController {
     private OrderService orderService;
 
     @PostMapping("/{userId}/checkOut")
-    public ResponseEntity<Order> placeOrder(@PathVariable String userId) {
-        Order order = orderService.placeOrder(userId);
+    public ResponseEntity<Order> placeOrder(@PathVariable String userId, @RequestParam(required = false,defaultValue = "online") String paymentMethod) {
+        Order order = orderService.placeOrder(userId, paymentMethod);
         return ResponseEntity.ok(order);
     }
 

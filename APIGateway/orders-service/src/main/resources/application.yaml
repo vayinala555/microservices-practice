@@ -29,3 +29,16 @@ cart:
 payment:
   service:
     url: http://PAYMENT-SERVICE/payment
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      paymentServiceCB:
+        slidingWindowSize: 3
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 2
+        slidingWindowType: COUNT_BASED
+        record-exceptions:
+          - java.lang.IllegalStateException
+          - java.lang.RuntimeException
