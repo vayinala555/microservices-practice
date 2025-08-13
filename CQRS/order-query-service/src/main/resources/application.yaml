@@ -6,11 +6,11 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb+srv://sa:sa@vayinala.ddubq5g.mongodb.net/?retryWrites=true&w=majority&appName=vayinala
+      uri: mongodb+srv://sa:admin@vayinala.ddubq5g.mongodb.net/?retryWrites=true&w=majority&appName=
       database: order-query-db
 
   kafka:
-    bootstrap-servers: <EC2_KAFKA_IP>:9092
+    bootstrap-servers: 3.110.89.80:9092
     consumer:
       group-id: order-group
       auto-offset-reset: earliest
@@ -18,3 +18,4 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring.json.trusted.packages: '*'
+        spring.json.value.default.type: com.example.order_query_service.events.OrderCreatedEvent

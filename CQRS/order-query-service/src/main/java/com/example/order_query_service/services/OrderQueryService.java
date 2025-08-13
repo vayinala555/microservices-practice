@@ -16,4 +16,10 @@ public class OrderQueryService {
     public List<OrderDocument> getOrders(String userId) {
         return orderMongoRepository.findByCustomerId(userId);
     }
+
+    public OrderDocument createOrder(OrderDocument orderDocument) {
+        // This method is not typically used in a query service, but included for completeness
+        // In a real-world scenario, this would be handled by the command service
+        return orderMongoRepository.save(orderDocument);
+    }
 }

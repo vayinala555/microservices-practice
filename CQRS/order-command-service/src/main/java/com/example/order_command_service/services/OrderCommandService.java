@@ -4,6 +4,7 @@ import com.example.order_command_service.entities.OrderEvent;
 import com.example.order_command_service.events.OrderCreatedEvent;
 import com.example.order_command_service.repositiories.OrderEventRepository;
 import com.example.order_command_service.serializer.EventSerializer;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -20,8 +21,9 @@ public class OrderCommandService {
     OrderEventRepository orderEventRepository;
 
     @Autowired
-    KafkaTemplate<String, OrderCreatedEvent> kafkaTemplate;
-
+    KafkaTemplate<String, String> kafkaTemplate;
+    @Autowired
+    private ObjectMapper objectMapper;
     public void createOrder(OrderCreatedEvent orderCreatedEvent) {
         try {
             // Serialize the event
@@ -43,7 +45,9 @@ public class OrderCommandService {
             orderEventToSend.setProduct(orderCreatedEvent.getProduct());
             orderEventToSend.setQuantity(orderCreatedEvent.getQuantity());
             orderEventToSend.setAmount(orderCreatedEvent.getAmount());
-            kafkaTemplate.send("order-events", orderEventToSend);
+
+            String json = objectMapper.writeValueAsString(orderEventToSend  );
+            kafkaTemplate.send("order-events", json);
 
         } catch (Exception e) {
             e.printStackTrace();

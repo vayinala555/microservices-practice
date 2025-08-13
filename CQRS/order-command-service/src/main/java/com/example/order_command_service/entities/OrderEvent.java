@@ -1,12 +1,13 @@
 package com.example.order_command_service.entities;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
 
 import java.time.LocalDateTime;
 
-@Document("orders")
+@Entity
 public class OrderEvent {
     @Id
     @GeneratedValue

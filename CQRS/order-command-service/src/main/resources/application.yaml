@@ -5,13 +5,13 @@ spring:
     name: order-command-service
 
   kafka:
-    bootstrap-servers: <EC2_KAFKA_IP>:9092
+    bootstrap-servers: 3.110.89.80:9092
     consumer:
       group-id: order-command-group
       auto-offset-reset: earliest
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
   data:
     url: jdbc:h2:mem:orders
