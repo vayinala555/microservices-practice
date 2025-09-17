@@ -27,6 +27,7 @@ public class LoggingFilter implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+        System.out.println("our customized filter is executing");
         ServerHttpRequest request = exchange.getRequest();
         HttpMethod method = request.getMethod();
 
